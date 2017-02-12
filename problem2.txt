@@ -1,0 +1,7 @@
+Please explain the difference between the following jQuery functions. What impact has or will this have on code you’ve written?
+
+1. $(“.todo-item”).on(“click”, function(e){ console.log(e) });
+	Clicking on any elements of the todo-item class will start an anonymous function that logs that element to the console.
+
+2. $(document).on(“click”, “.todo-item”, function(e){ console.log(e) });
+	This does the same thing but the document is the selected element, so it works a little differently. The handler is delegated to any elements of the class todo-item and bubbles up from those to the document console logging anything that matches the todo-item class. So if there were no elements of the todo-item class in document, this function would not run when you click on the document. In contrast, the code in #1 will always run because it's directly bound to the selected element.
