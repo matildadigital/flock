@@ -1,0 +1,95 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+<div id = "wrapper">
+	<form method = "get">
+		<div class="form-group row">
+		  <label for="example-text-input" class="col-2 col-form-label">To Do Item</label>
+		  <div class="col-10">
+		    <input class="form-control" type="To-Do Item" value="Pick up milk..." id="name">
+		  </div>
+		</div>
+
+		<div class="form-group">
+		    <label for="exampleSelect1">Category</label>
+		    <select class="form-control" id="topic">
+		      <option value = "health">Health and Fitness</option>
+		      <option value = "family">Family and Friends</option>
+		      <option value = "prof">Professional</option>
+		      <option value = "finan">Financial</option>
+		      <option value = "leis">Leisure</option>
+		    </select>
+  		</div>
+
+  		<div class="form-group row">
+  			<label for="example-date-input" class="col-2 col-form-label">Due Date</label>
+ 			<div class="col-10">
+   			<input class="form-control" type="date" value="2017-02-12" id="duedate">
+  			</div>
+		</div>
+
+		<div class="form-check">
+    		<label class="form-check-label">
+      		<input type="checkbox" class="form-check-input"> Completed? </label>
+  		</div>
+  		
+  		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+
+	<table class="table">
+	  <thead class="thead-inverse">
+	    <tr>
+	      <th>#</th>
+	      <th>To-Do Item</th>
+	      <th>Category</th>
+	      <th>Due Date</th>
+	      <th>Completed</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <th scope="row">1</th>
+	      <td>Pick up milk.</td>
+	      <td>Health and Fitness</td>
+	      <td>2/19/2017</td>
+	      <td>False</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">2</th>
+	      <td>Call Jane.</td>
+	      <td>Friends and Family</td>
+	      <td>2/19/2017</td>
+	      <td>False</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">3</th>
+	      <td>Read MIT Technology Review.</td>
+	      <td>Professional</td>
+	      <td>2/19/2017</td>
+	      <td>False</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">4</th>
+	      <td>Pay for insurance.</td>
+	      <td>Financial</td>
+	      <td>2/19/2017</td>
+	      <td>False</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">5</th>
+	      <td>Go to yoga class.</td>
+	      <td>Leisure</td>
+	      <td>2/19/2017</td>
+	      <td>False</td>
+	    </tr>
+	  </tbody>
+	</table>
+</div>
+	</body>
+</html>
